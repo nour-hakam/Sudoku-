@@ -1,0 +1,133 @@
+/* GameControls.css - Styles for the control panel */
+
+.game-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px 0;
+}
+
+.control-section {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.control-section h3 {
+  margin: 0 0 10px 0;
+  color: #495057;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* Difficulty Buttons */
+.difficulty-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.btn-difficulty {
+  padding: 8px 12px;
+  border: 2px solid #dee2e6;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.btn-difficulty:hover {
+  background: #e9ecef;
+  transform: translateY(-2px);
+}
+
+.btn-difficulty.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+}
+
+.btn-difficulty:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Solver Buttons */
+.solver-buttons,
+.action-buttons,
+.help-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.9em;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-solve {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+}
+
+.btn-reset {
+  background: linear-gradient(135deg, #ffc107 0%, #ff9800 100%);
+  color: #212529;
+}
+
+.btn-clear {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  color: white;
+}
+
+.btn-check {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+}
+
+.btn-hint {
+  background: linear-gradient(135deg, #20c997 0%, #17a2b8 100%);
+  color: white;
+}
+
+.btn-hints {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  color: white;
+}
+
+.btn-hints-active {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+}
+
+/* Loading Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
