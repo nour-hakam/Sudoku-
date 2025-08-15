@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sudoku-game/static/css/main.d265f5a6.css",
+    "main.js": "/sudoku-game/static/js/main.87a84e35.js",
+    "index.html": "/sudoku-game/index.html",
+    "main.d265f5a6.css.map": "/sudoku-game/static/css/main.d265f5a6.css.map",
+    "main.87a84e35.js.map": "/sudoku-game/static/js/main.87a84e35.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d265f5a6.css",
+    "static/js/main.87a84e35.js"
+  ]
+}
