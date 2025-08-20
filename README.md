@@ -3,10 +3,6 @@
 A modern, fully-featured Sudoku game built with React and TypeScript.  
 Deployed on GitHub Pages with Create React App.
 
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://nour-hakam.github.io/Sudoku-)
-[![GitHub stars](https://img.shields.io/github/stars/nour-hakam/Sudoku-)](https://github.com/nour-hakam/Sudoku-/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/nour-hakam/Sudoku-)](https://github.com/nour-hakam/Sudoku-/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/nour-hakam/Sudoku-)](https://github.com/nour-hakam/Sudoku-/issues)
 
 ---
 
